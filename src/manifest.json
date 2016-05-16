@@ -131,7 +131,8 @@
     "*://*.visualstudio.com/*",
     "*://*.smartboard.cl/*",
     "*://*.openproject.com/*",
-    "*://zube.io/*"
+    "*://zube.io/*",
+    "*://mkl.loee.pl/*"
   ],
   "content_scripts": [
     {
@@ -234,7 +235,8 @@
         "*://*.openproject.com/*",
         "*://zube.io/*",
         "*://*.minicrm.pl/*",
-        "*://*.agenocrm.com/*"
+        "*://*.agenocrm.com/*",
+        "*://mkl.loee.pl/*"
       ],
       "css": ["styles/style.css"],
       "js": ["scripts/common.js"]
@@ -480,7 +482,7 @@
       "js": ["scripts/content/fogbugz.js"]
     },
     {
-      "matches": ["*://*.phacility.com/*", "*://sources.redfunction.ee/*"],
+      "matches": ["*://*.phacility.com/*", "*://sources.redfunction.ee/*", "*://mkl.loee.pl/*"],
       "js": ["scripts/content/phabricator.js"]
     },
     {
