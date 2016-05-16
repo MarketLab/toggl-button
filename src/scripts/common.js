@@ -118,6 +118,7 @@ var togglbutton = {
           }
           togglbutton.renderTo(selector, renderer);
         } catch (e) {
+          console.error(e);
           chrome.extension.sendMessage({type: 'error', stack: e.stack});
         }
       }
