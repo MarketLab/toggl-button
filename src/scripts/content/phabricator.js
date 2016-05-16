@@ -33,11 +33,12 @@ togglbutton.render('.phui-header-header .fa-exclamation-circle:not(.toggl)', {ob
   var link,
     parent = elem.parentNode,
     description = parent.textContent,
-    projectName = findBestProjectName($('.phabricator-handle-tag-list'));
+    projectName = findBestProjectName($('.phabricator-handle-tag-list')),
+    id = $('.phabricator-last-crumb').textContent.trim();
 
   link = togglbutton.createTimerLink({
     className: 'phabricator',
-    description: description,
+    description: id + " " + description,
     projectName: projectName
   });
 
