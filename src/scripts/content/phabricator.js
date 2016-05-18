@@ -8,9 +8,10 @@ var findTagByType = function (elem, icon_class) {
     return tag.parentNode.textContent;
   },
   findBestProjectName = function (elem) {
-    var projectTag = findTagByType(elem, 'briefcase'),
-      accountTag = findTagByType(elem, 'credit-card');
-    return projectTag || accountTag || '';
+    return findTagByType(elem, 'flask') ||
+           findTagByType(elem, 'briefcase') ||
+           findTagByType(elem, 'credit-card') ||
+           '';
   };
 
 togglbutton.render('#phabricator-standard-page-body .phui-workpanel-view .phui-object-item:not(.toggl)', {observe: true}, function (elem) {
